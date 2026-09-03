@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sattva India | OVP Quality Foods | Institutional Food & Spice Solutions</title>
+  
+  <meta name="description" content="Sattva India (OVP Quality Foods) - FSSAI & ISO 9001:2015 certified wholesale spice supplier & institutional food partner in Nigdi, Pune." />
+  <meta name="keywords" content="Wholesale spice suppliers Pune, HoReCa food partner Nigdi, Bulk masala distributor Maharashtra, FSSAI certified spice exporter India" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            spice: {
+              900: '#150806',
+              800: '#2A110D',
+              700: '#8A1C14',
+              600: '#B91C1C',
+              500: '#C2410C',
+              amber: '#EAB308',
+              gold: '#D4AF37',
+              surface: '#FAF7F2',
+            }
+          },
+          animation: {
+            'blob': 'blob 8s infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'badge-pop': 'badgePop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+          },
+          keyframes: {
+            blob: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '33%': { transform: 'translate(25px, -35px) scale(1.1)' },
+              '66%': { transform: 'translate(-20px, 20px) scale(0.95)' },
+              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            badgePop: {
+              '0%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.45)' },
+              '100%': { transform: 'scale(1)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .hover-lift {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hover-lift:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body class="bg-spice-surface text-stone-800 font-sans antialiased selection:bg-spice-700 selection:text-white pb-28 md:pb-0 overflow-x-hidden">
+
+  <div id="toastContainer" class="fixed top-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <div class="bg-spice-900 text-stone-300 text-xs py-2.5 px-4 border-b border-stone-800 tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center flex-wrap justify-center gap-4">
+        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-spice-amber"></i> Pradhikaran, Nigdi, Pune, MH</span>
+        <span class="hidden md:inline text-stone-600">|</span>
+        <button onclick="openCertModal('fssai')" class="flex items-center gap-1.5 text-emerald-400 font-medium hover:underline cursor-pointer group">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 group-hover:scale-110 transition-transform"></i> <span data-i18n="topCompliance">FSSAI & ISO 9001:2015 Verified Facility</span>
+        </button>
+      </div>
+      
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center bg-stone-800 rounded-lg p-0.5 border border-stone-700 text-[11px] font-bold">
+          <button onclick="changeLanguage('en')" id="lang-en" class="px-2 py-0.5 rounded bg-spice-700 text-white transition-all">EN</button>
+          <button onclick="changeLanguage('mr')" id="lang-mr" class="px-2 py-0.5 rounded text-stone-400 hover:text-white transition-all">मराठी</button>
+          <button onclick="changeLanguage('hi')" id="lang-hi" class="px-2 py-0.5 rounded text-stone-400 hover:text-white transition-all">हिंदी</button>
+        </div>
+
+        <a href="tel:+919637515153" class="hidden sm:flex hover:text-spice-amber items-center gap-1.5 text-white font-bold transition-colors">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-spice-amber"></i> +91 9637515153
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="group flex flex-col">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-spice-900 group-hover:text-spice-700 transition-colors uppercase">SATTVA INDIA</span>
+          <span class="inline-block w-2 h-2 rounded-full bg-spice-amber animate-ping"></span>
+        </div>
+        <span class="text-[10px] font-extrabold tracking-[0.25em] text-stone-500 uppercase -mt-1">OVP QUALITY FOODS • PUNE</span>
+      </a>
+
+      <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-stone-700">
+        <a href="#about" class="hover:text-spice-700 transition-colors" data-i18n="navAbout">About Us</a>
+        <a href="#sectors" class="hover:text-spice-700 transition-colors" data-i18n="navSectors">Supply Sectors</a>
+        <a href="#routes" class="hover:text-spice-700 transition-colors" data-i18n="navRoutes">Logistics Hub</a>
+        <a href="#catalog" class="hover:text-spice-700 transition-colors" data-i18n="navCatalog">Catalog & Matrix</a>
+        <a href="#compliance" class="hover:text-spice-700 transition-colors" data-i18n="navCert">COA & Quality</a>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <button onclick="toggleDrawer(true)" class="relative inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-sm transition-all hover:shadow-lg active:scale-95">
+          <i data-lucide="shopping-bag" class="w-4 h-4 text-spice-amber"></i>
+          <span class="hidden sm:inline" data-i18n="navQuoteDrawer">Quote Drawer</span>
+          <span id="navCartCount" class="w-5 h-5 rounded-full bg-spice-700 text-white text-[11px] font-bold flex items-center justify-center transition-transform">0</span>
+        </button>
+        <a href="#quote-section" class="hidden sm:inline-flex items-center gap-2 bg-spice-700 hover:bg-spice-800 text-white px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md transition-all hover:shadow-lg active:scale-95">
+          <i data-lucide="send" class="w-4 h-4"></i> <span data-i18n="btnBulkPricing">Submit Order</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative bg-spice-900 text-white py-16 lg:py-24 overflow-hidden border-b border-spice-800">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-spice-700/30 rounded-full blur-3xl animate-blob"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-spice-amber/20 rounded-full blur-3xl animate-blob [animation-delay:4s]"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6" data-aos="fade-right" data-aos-duration="900">
+          <div class="inline-flex items-center gap-2.5 bg-spice-800/90 border border-spice-gold/30 text-spice-amber text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-md shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span data-i18n="heroBadge">FSSAI & ISO Certified • Direct Milling & Bulk Food Partner</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight leading-[1.15]" data-i18n="heroTitle">
+            Precision Spice Formulations for Commercial Kitchens & Exporters.
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-300 max-w-2xl leading-relaxed font-light" data-i18n="heroDesc">
+            Directly from our Nigdi milling facility. Select bulk sacks or request free chef sample kits, verify HPLC lab reports, and lock in consistent taste profiles.
+          </p>
+
+          <div class="pt-2 flex flex-wrap gap-4 items-center">
+            <a href="#catalog" class="inline-flex items-center gap-2 bg-gradient-to-r from-spice-amber to-amber-500 hover:from-amber-500 hover:to-amber-600 text-spice-900 font-extrabold px-7 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all hover:scale-105 active:scale-95">
+              <i data-lucide="layers" class="w-5 h-5"></i> <span data-i18n="heroOrderBtn">Build Custom Batch Order</span>
+            </a>
+            <button onclick="openCertModal('fssai')" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold px-6 py-4 rounded-xl backdrop-blur-md transition-all hover:scale-105 active:scale-95">
+              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"></i> <span data-i18n="heroInspectCert">Inspect Compliance</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+          <div class="bg-gradient-to-b from-stone-900/95 to-spice-900/95 border border-stone-700/60 p-6 sm:p-8 rounded-3xl backdrop-blur-xl shadow-2xl space-y-4 animate-float">
+            <div class="flex items-center justify-between pb-3 border-b border-stone-800">
+              <span class="text-xs uppercase tracking-widest text-spice-amber font-bold" data-i18n="proofHeader">Verified Quality Metrics</span>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded font-bold">100% PASS</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex items-center justify-between p-3 bg-stone-800/60 rounded-xl border border-stone-700/50 hover:border-stone-500 transition-colors">
+                <span class="text-stone-300">Moisture Content</span>
+                <span class="font-bold text-emerald-400">&lt; 9.5% (Max Shelf Life)</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-stone-800/60 rounded-xl border border-stone-700/50 hover:border-stone-500 transition-colors">
+                <span class="text-stone-300">Artificial Colors (Sudan I-IV)</span>
+                <span class="font-bold text-emerald-400">NOT DETECTED (HPLC Tested)</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-stone-800/60 rounded-xl border border-stone-700/50 hover:border-stone-500 transition-colors">
+                <span class="text-stone-300">Aflatoxin (B1 + B2 + G1 + G2)</span>
+                <span class="font-bold text-emerald-400">&lt; 5.0 ppb (Export Benchmark)</span>
+              </div>
+            </div>
+
+            <button onclick="openCertModal('coa')" class="w-full text-center text-xs text-spice-amber font-bold hover:underline pt-2 block transition-all hover:scale-105">
+              Click to view complete signed Batch Lab Report &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-white border-b border-stone-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6" data-aos="fade-up" data-aos-duration="800">
+          <div class="bg-gradient-to-br from-stone-900 to-spice-900 p-8 rounded-3xl text-white shadow-xl relative overflow-hidden border border-stone-800 hover-lift">
+            <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-spice-700/30 rounded-full blur-2xl pointer-events-none"></div>
+            <span class="text-xs uppercase tracking-widest text-spice-amber font-bold" data-i18n="aboutBadge">Our Origin & Infrastructure</span>
+            <h3 class="text-2xl font-serif font-black mt-2 leading-snug" data-i18n="aboutCardTitle">OVP Quality Foods (Sattva India)</h3>
+            <p class="text-xs text-stone-300 mt-3 leading-relaxed" data-i18n="aboutCardDesc">
+              Headquartered at Pradhikaran, Nigdi, Pune, we operate state-of-the-art cold-milling and automated batch-packaging units engineered specifically to serve high-consumption institutional food sectors.
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-stone-800 text-center">
+              <div class="p-3 bg-stone-800/60 rounded-xl">
+                <div class="text-xl font-bold text-spice-amber">100%</div>
+                <div class="text-[10px] text-stone-400 uppercase font-semibold mt-0.5">Cold Ground Aroma</div>
+              </div>
+              <div class="p-3 bg-stone-800/60 rounded-xl">
+                <div class="text-xl font-bold text-spice-amber">ISO & FSSAI</div>
+                <div class="text-[10px] text-stone-400 uppercase font-semibold mt-0.5">Certified Safety</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-stone-50 rounded-2xl border border-stone-200 flex items-start gap-4 hover-lift">
+            <div class="p-3 bg-red-100 text-spice-700 rounded-xl shrink-0">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-900 text-sm" data-i18n="aboutCustomTitle">Custom Blend Formulation</h4>
+              <p class="text-xs text-stone-600 mt-1 leading-relaxed" data-i18n="aboutCustomDesc">
+                We work directly with Master Chefs and Hotel F&B Heads to lock in unique garam masala, biryani, or curry formulations with zero batch-to-batch variation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-spice-700 bg-red-50 px-3 py-1 rounded-md" data-i18n="aboutTag">Company Heritage</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-black text-stone-900 mt-2" data-i18n="aboutMainTitle">Bridging Pure Farmlands with Commercial Kitchens</h2>
+          </div>
+
+          <p class="text-stone-700 text-sm leading-relaxed" data-i18n="aboutP1">
+            Founded with a commitment to pure, unadulterated spices and institutional food supplies, <strong>Sattva India (OVP Quality Foods)</strong> has grown to become the preferred partner for leading hospitality groups, caterers, educational messes, and international spice distributors across Maharashtra and beyond.
+          </p>
+
+          <p class="text-stone-700 text-sm leading-relaxed" data-i18n="aboutP2">
+            Unlike standard commercial suppliers, our procurement model originates directly from India's primary spice hubs—Byadgi and Guntur for chili, Salem and Sangli for turmeric, Unjha for cumin, and Kerala for Tellicherry black pepper. Our low-temperature milling protects essential oils, volatility, and natural pungency without synthetic fillers, artificial starch, or artificial coloring agents.
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 hover-lift">
+              <i data-lucide="factory" class="w-5 h-5 text-spice-700 mb-2"></i>
+              <h5 class="font-bold text-stone-900 text-xs" data-i18n="aboutPillar1">Hygienic Milling</h5>
+              <p class="text-[11px] text-stone-500 mt-1">Stainless-steel pulverizers & magnetic metal separators.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 hover-lift">
+              <i data-lucide="flask-round" class="w-5 h-5 text-spice-amber mb-2"></i>
+              <h5 class="font-bold text-stone-900 text-xs" data-i18n="aboutPillar2">Lab Verified</h5>
+              <p class="text-[11px] text-stone-500 mt-1">Regular HPLC testing for moisture, ash, and zero Sudan dyes.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 hover-lift">
+              <i data-lucide="boxes" class="w-5 h-5 text-emerald-700 mb-2"></i>
+              <h5 class="font-bold text-stone-900 text-xs" data-i18n="aboutPillar3">Flexible Sizing</h5>
+              <p class="text-[11px] text-stone-500 mt-1">500g pouches up to 50kg industrial HDPE sacks.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sectors" class="py-20 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+        <span class="text-xs font-bold uppercase tracking-widest text-spice-700 bg-red-50 px-3 py-1 rounded-md" data-i18n="sectorTag">Institutional Segments</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-black text-stone-900 mt-2" data-i18n="sectorTitle">Dedicated Solutions for Every Commercial Scale</h2>
+        <p class="text-stone-600 text-sm mt-2" data-i18n="sectorDesc">We tailor our volume slabs, recipe profiles, and delivery schedules to meet the stringent demands of each commercial sector.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white p-7 rounded-2xl border border-stone-200 hover:border-spice-700/50 hover-lift flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-red-50 text-spice-700 flex items-center justify-center mb-4 group-hover:bg-spice-700 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="utensils-crossed" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif font-bold text-stone-900 text-lg" data-i18n="sec1Title">Hotels, Cafes & Restaurants</h3>
+            <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="sec1Desc">
+              Consistent gravy bases, authentic tandoori and biryani masalas, sauces, and kitchen pantry items with standardized portioning and flavor lock.
+            </p>
+          </div>
+          <ul class="mt-4 pt-4 border-t border-stone-100 text-[11px] space-y-1.5 text-stone-500">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Fixed Recipe Taste Matching</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> 1kg & 5kg Catering Pouch Sizing</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl border border-stone-200 hover:border-amber-600/50 hover-lift flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="building" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif font-bold text-stone-900 text-lg" data-i18n="sec2Title">Hostels, Messes & Canteens</h3>
+            <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="sec2Desc">
+              Engineered for large-scale institutional cafeterias, engineering college messes, and factory dining facilities requiring high yields and wholesale efficiency.
+            </p>
+          </div>
+          <ul class="mt-4 pt-4 border-t border-stone-100 text-[11px] space-y-1.5 text-stone-500">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> High-Yield Extraction</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Scheduled Weekly Bulk Sacks (25kg/50kg)</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl border border-stone-200 hover:border-emerald-600/50 hover-lift flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-4 group-hover:bg-emerald-700 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="store" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif font-bold text-stone-900 text-lg" data-i18n="sec3Title">Wholesale Retail & Kirana</h3>
+            <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="sec3Desc">
+              Retail-ready packaging for supermarkets, grocery chains, and distributor networks with barcoding, long shelf-life sealing, and healthy distributor margins.
+            </p>
+          </div>
+          <ul class="mt-4 pt-4 border-t border-stone-100 text-[11px] space-y-1.5 text-stone-500">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> 100g, 200g, 500g Moisture Barrier Packs</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Fast Moving FMCG SKUs</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl border border-stone-200 hover:border-blue-600/50 hover-lift flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-800 flex items-center justify-center mb-4 group-hover:bg-blue-700 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="globe-2" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif font-bold text-stone-900 text-lg" data-i18n="sec4Title">Global Exports & OEM</h3>
+            <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="sec4Desc">
+              Machine-cleaned, sorted, low-moisture whole and powdered spices compliant with international Phytosanitary and Spice Board benchmarks.
+            </p>
+          </div>
+          <ul class="mt-4 pt-4 border-t border-stone-100 text-[11px] space-y-1.5 text-stone-500">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Vacuum Sealed / Nitrogen Flushed</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Full Export COA & Fumigation Clearances</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="routes" class="py-16 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+        <span class="text-xs font-bold uppercase tracking-widest text-spice-700 bg-red-50 px-3 py-1 rounded-md" data-i18n="routeTag">Local Pune Logistics</span>
+        <h2 class="text-3xl font-serif font-black text-stone-900 mt-2" data-i18n="routeTitle">Daily Scheduled Delivery Grid</h2>
+        <p class="text-stone-600 text-sm mt-2" data-i18n="routeDesc">Operating from our central Nigdi hub with guaranteed regular supply runs across major industrial & HoReCa clusters.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 hover-lift" data-aos="zoom-in" data-aos-delay="100">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] font-bold uppercase bg-red-100 text-spice-700 px-2 py-0.5 rounded">Route 1 • Daily</span>
+            <i data-lucide="truck" class="w-4 h-4 text-spice-700"></i>
+          </div>
+          <h4 class="font-bold text-stone-900 text-sm">PCMC Industrial Corridor</h4>
+          <p class="text-xs text-stone-500 mt-1">Pradhikaran, Nigdi, Bhosari MIDC, Chakan Industrial Area, Talawade IT Park.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 hover-lift" data-aos="zoom-in" data-aos-delay="200">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] font-bold uppercase bg-amber-100 text-amber-800 px-2 py-0.5 rounded">Route 2 • Daily</span>
+            <i data-lucide="truck" class="w-4 h-4 text-amber-700"></i>
+          </div>
+          <h4 class="font-bold text-stone-900 text-sm">IT Parks & Western Hub</h4>
+          <p class="text-xs text-stone-500 mt-1">Hinjewadi Phases 1, 2, 3, Wakad, Baner, Balewadi, Aundh.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 hover-lift" data-aos="zoom-in" data-aos-delay="300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] font-bold uppercase bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">Route 3 • Bi-Daily</span>
+            <i data-lucide="truck" class="w-4 h-4 text-emerald-700"></i>
+          </div>
+          <h4 class="font-bold text-stone-900 text-sm">Central & Eastern Pune</h4>
+          <p class="text-xs text-stone-500 mt-1">Shivajinagar, Kothrud, Swargate, Viman Nagar, Kharadi, Hadapsar.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 hover-lift" data-aos="zoom-in" data-aos-delay="400">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] font-bold uppercase bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Regional & Export</span>
+            <i data-lucide="globe" class="w-4 h-4 text-blue-700"></i>
+          </div>
+          <h4 class="font-bold text-stone-900 text-sm">Pan-India & JNPT Port</h4>
+          <p class="text-xs text-stone-500 mt-1">Maharashtra statewide transport lines & direct container loading for global exports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="py-20 bg-spice-surface border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4" data-aos="fade-up">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-spice-700" data-i18n="catalogTag">Interactive Inventory Matrix</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-black text-stone-900 mt-1" data-i18n="catalogTitle">Wholesale Product Order Matrix</h2>
+          <p class="text-stone-600 text-sm mt-1" data-i18n="catalogDesc">Choose packaging formats or request testing samples directly into your procurement drawer.</p>
+        </div>
+
+        <div class="flex items-center bg-white p-1.5 rounded-2xl border border-stone-300 shadow-sm shrink-0">
+          <button onclick="setMode('bulk')" id="mode-bulk" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-spice-700 text-white transition-all flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="package" class="w-3.5 h-3.5"></i> Commercial Bulk
+          </button>
+          <button onclick="setMode('sample')" id="mode-sample" class="px-3.5 py-1.5 rounded-xl text-xs font-bold text-stone-600 hover:text-stone-900 transition-all flex items-center gap-1.5">
+            <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i> Free Chef's Sample Kit (50-100g)
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-4 justify-between items-center pb-6 border-b border-stone-300/80">
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar w-full md:w-auto py-1" id="filterContainer">
+          <button onclick="setCategory('all', event)" class="cat-pill active-pill bg-spice-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap shadow-sm">All Products (<span id="total-count">0</span>)</button>
+          <button onclick="setCategory('masale', event)" class="cat-pill bg-white text-stone-700 hover:bg-stone-100 border border-stone-300 text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap" data-i18n="catMasale">Ground Masale (20)</button>
+          <button onclick="setCategory('whole', event)" class="cat-pill bg-white text-stone-700 hover:bg-stone-100 border border-stone-300 text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap" data-i18n="catWhole">Whole Spices & Dry Fruits (24)</button>
+          <button onclick="setCategory('sauces', event)" class="cat-pill bg-white text-stone-700 hover:bg-stone-100 border border-stone-300 text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap" data-i18n="catSauces">Sauces (5)</button>
+          <button onclick="setCategory('papad-pickle', event)" class="cat-pill bg-white text-stone-700 hover:bg-stone-100 border border-stone-300 text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap" data-i18n="catPapadPickle">Papad & Pickles (8)</button>
+          <button onclick="setCategory('staples', event)" class="cat-pill bg-white text-stone-700 hover:bg-stone-100 border border-stone-300 text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap" data-i18n="catStaples">Pantry & Other Items (8)</button>
+        </div>
+
+        <div class="w-full md:w-72 shrink-0">
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5"></i>
+            <input type="text" id="productSearch" placeholder="Search masale, whole spices, sauces..." class="w-full pl-10 pr-4 py-2.5 text-xs bg-white border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 shadow-sm transition-all" onkeyup="filterProducts()" />
+          </div>
+        </div>
+      </div>
+
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 pt-8">
+        </div>
+
+      <div class="mt-10 p-6 bg-gradient-to-r from-stone-900 via-spice-900 to-stone-900 rounded-2xl border border-stone-800 text-white flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-spice-amber/20 text-spice-amber flex items-center justify-center shrink-0">
+            <i data-lucide="boxes" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-white">Need a specific spice or food ingredient not listed?</h4>
+            <p class="text-xs text-stone-300 mt-0.5">Additional products can be customized and ordered as required. We deal in all kinds of institutional food products.</p>
+          </div>
+        </div>
+        <a href="#quote-section" class="px-5 py-2.5 bg-spice-amber hover:bg-yellow-500 text-stone-950 text-xs font-extrabold rounded-xl transition-all uppercase tracking-wider whitespace-nowrap">
+          Request Custom Food Item
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="compliance" class="py-16 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md" data-i18n="certTag">Transparency & Quality Control</span>
+        <h2 class="text-3xl font-serif font-black text-stone-900 mt-2" data-i18n="certTitle">Live Certifications & Batch COA Reports</h2>
+        <p class="text-stone-600 text-sm mt-2" data-i18n="certDesc">Audit our compliance benchmarks before purchasing. We provide batch-specific testing for high-volume commercial kitchens and exporters.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div onclick="openCertModal('fssai')" class="cursor-pointer p-6 rounded-2xl bg-stone-50 hover:bg-white border border-stone-200 hover:border-emerald-500 hover-lift group" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-md">Govt Licensed</span>
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg group-hover:text-emerald-800 transition-colors">FSSAI Manufacturing License</h3>
+          <p class="text-xs text-stone-600 mt-2">Certified central/state compliance ensuring 100% hygienic handling, zero synthetic contaminants, and safe food grade storage.</p>
+          <div class="mt-4 flex items-center gap-1 text-xs font-bold text-emerald-700">
+            <span>Inspect License Parameters</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <div onclick="openCertModal('iso')" class="cursor-pointer p-6 rounded-2xl bg-stone-50 hover:bg-white border border-stone-200 hover:border-blue-500 hover-lift group" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-blue-100 text-blue-800 px-2.5 py-1 rounded-md">ISO Certified</span>
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg group-hover:text-blue-800 transition-colors">ISO 9001:2015 Quality System</h3>
+          <p class="text-xs text-stone-600 mt-2">Standardized quality management across procurement, cold-milling, recipe replication, and institutional packaging.</p>
+          <div class="mt-4 flex items-center gap-1 text-xs font-bold text-blue-700">
+            <span>View ISO Audit Scope</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <div onclick="openCertModal('coa')" class="cursor-pointer p-6 rounded-2xl bg-stone-50 hover:bg-white border border-stone-200 hover:border-spice-amber hover-lift group" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-bold uppercase bg-amber-100 text-amber-900 px-2.5 py-1 rounded-md">Lab Certificate</span>
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg group-hover:text-spice-700 transition-colors">Certificate of Analysis (COA)</h3>
+          <p class="text-xs text-stone-600 mt-2">HPLC lab verification for zero Sudan dye adulteration, low moisture (&lt;9.5%), and export aflatoxin benchmarks.</p>
+          <div class="mt-4 flex items-center gap-1 text-xs font-bold text-spice-700">
+            <span>Inspect Chemical & Microbe Report</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote-section" class="py-20 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white p-8 sm:p-12 rounded-3xl border border-stone-200 shadow-xl" data-aos="zoom-in-up" data-aos-duration="800">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-spice-700 bg-red-50 px-3 py-1 rounded-md" data-i18n="formTag">Direct Wholesale Inquiries</span>
+          <h2 class="text-3xl font-serif font-black text-stone-900 mt-2" data-i18n="formTitle">Structured Quotation Summary</h2>
+          <p class="text-stone-600 text-xs sm:text-sm mt-2 max-w-xl mx-auto" data-i18n="formDesc">Your customized quantities and pack units from the catalog are automatically populated below.</p>
+        </div>
+
+        <form onsubmit="handleQuoteSubmit(event)" class="space-y-5">
+          <div class="grid sm:grid-cols-3 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" data-i18n="formLabelBiz">Business Name *</label>
+              <input type="text" id="bizName" required placeholder="e.g. Hotel Green Park" class="w-full px-4 py-3 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 transition-all" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5">Contact Person *</label>
+              <input type="text" id="bizContactPerson" required placeholder="e.g. Rajesh Patil" class="w-full px-4 py-3 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 transition-all" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" data-i18n="formLabelPhone">WhatsApp Mobile *</label>
+              <div class="relative flex items-center">
+                <span class="absolute left-3.5 text-xs font-bold text-stone-500 select-none">+91</span>
+                <input 
+                  type="tel" 
+                  id="bizPhone" 
+                  required 
+                  inputmode="numeric" 
+                  pattern="[6-9][0-9]{9}" 
+                  maxlength="10" 
+                  placeholder="9876543210" 
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+                  class="w-full pl-12 pr-4 py-3 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 font-medium transition-all" 
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" data-i18n="formLabelSector">Operation Sector</label>
+              <select id="bizType" class="w-full px-4 py-3 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 transition-all">
+                <option value="Hotel / Fine Dining Restaurant">Hotel / Fine Dining Restaurant</option>
+                <option value="Catering & Event Management">Catering & Event Management</option>
+                <option value="Hostel / Educational / Industrial Mess">Hostel / Educational / Industrial Mess</option>
+                <option value="Wholesale Distributor / Supermarket">Wholesale Distributor / Supermarket</option>
+                <option value="Spice Exporter / Trader">Spice Exporter / Trader</option>
+                <option value="Other Commercial Kitchen">Other Commercial Kitchen</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" data-i18n="formLabelLoc">Delivery Destination</label>
+              <input type="text" id="bizLocation" placeholder="e.g. Hinjewadi Phase 1, Pune / Chakan / Outstation" class="w-full px-4 py-3 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 transition-all" />
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider" data-i18n="formLabelReq">Configured Items in Quote</label>
+              <span class="text-[11px] text-spice-700 font-bold" id="itemCounterBadge">0 configured item(s)</span>
+            </div>
+            <textarea id="bizRequirements" rows="5" required placeholder="Select items from the catalog or open the Quote Drawer to customize units..." class="w-full px-4 py-3 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 font-mono text-xs transition-all"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-spice-700 hover:bg-spice-800 text-white font-extrabold py-4 px-6 rounded-xl flex items-center justify-center gap-2.5 shadow-lg hover:shadow-spice-700/30 transition-all text-sm uppercase tracking-wider hover:scale-[1.01] active:scale-95">
+            <i data-lucide="send" class="w-4 h-4"></i> <span data-i18n="formBtnSend">Transmit Order Quote to WhatsApp Desk</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="drawerBackdrop" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300" onclick="toggleDrawer(false)"></div>
+  <div id="quoteDrawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 bg-spice-900 text-white flex items-center justify-between border-b border-stone-800">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-spice-amber"></i>
+        <h3 class="font-serif font-bold text-base">Commercial Quote Drawer</h3>
+      </div>
+      <button onclick="toggleDrawer(false)" class="p-1 rounded-lg hover:bg-stone-800 text-stone-400 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-5 space-y-4" id="drawerItemList">
+      </div>
+
+    <div class="p-5 bg-stone-50 border-t border-stone-200 space-y-3">
+      <div class="flex items-center justify-between text-xs">
+        <span class="text-stone-500 font-semibold">Total Line Items:</span>
+        <span class="font-bold text-stone-900 text-sm" id="drawerTotalCount">0</span>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="clearCart()" class="py-2.5 px-3 bg-stone-200 hover:bg-stone-300 text-stone-700 text-xs font-bold rounded-xl transition-colors active:scale-95">
+          Clear All
+        </button>
+        <a href="#quote-section" onclick="toggleDrawer(false)" class="flex-1 py-2.5 px-4 bg-spice-700 hover:bg-spice-800 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 transition-all uppercase tracking-wider shadow-md hover:shadow-lg active:scale-95">
+          Proceed to Final Quote <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-spice-900 text-stone-300 text-xs border-t border-stone-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-serif font-black tracking-tight text-white uppercase">SATTVA INDIA</span>
+            <span class="inline-block w-2 h-2 rounded-full bg-spice-amber"></span>
+          </div>
+          <span class="text-[10px] font-extrabold tracking-[0.2em] text-spice-amber uppercase block -mt-2">
+            OVP QUALITY FOODS • NIGDI, PUNE
+          </span>
+
+          <p class="text-stone-400 text-xs leading-relaxed max-w-sm" data-i18n="footerBrandBio">
+            Your trusted B2B institutional food partner. Specializing in single-origin whole spices, cold-ground customized masala blends, pickles, sauces, and kitchen dry goods for HoReCa and global export consignments.
+          </p>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="inline-flex items-center gap-1.5 bg-stone-800 border border-stone-700 text-emerald-400 text-[11px] font-semibold px-2.5 py-1 rounded-lg hover:border-emerald-500 transition-colors">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> FSSAI Licensed
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-stone-800 border border-stone-700 text-blue-400 text-[11px] font-semibold px-2.5 py-1 rounded-lg hover:border-blue-500 transition-colors">
+              <i data-lucide="award" class="w-3.5 h-3.5"></i> ISO 9001:2015
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-stone-800 border border-stone-700 text-amber-400 text-[11px] font-semibold px-2.5 py-1 rounded-lg hover:border-amber-500 transition-colors">
+              <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i> HPLC Lab Tested
+            </span>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest border-l-2 border-spice-amber pl-2" data-i18n="footerSecHeader">
+            Supply Sectors
+          </h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#sectors" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Hotels & Restaurants (HoReCa)</a></li>
+            <li><a href="#sectors" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Industrial Mess & Canteens</a></li>
+            <li><a href="#sectors" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> College & Student Hostels</a></li>
+            <li><a href="#sectors" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Wholesale Retail Distributors</a></li>
+            <li><a href="#sectors" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Global Spice Exporters</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest border-l-2 border-spice-amber pl-2" data-i18n="footerCatHeader">
+            Product Portfolio
+          </h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#catalog" onclick="setCategory('masale')" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Pure & Blended Masale (20)</a></li>
+            <li><a href="#catalog" onclick="setCategory('whole')" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Whole Spices & Dry Fruits (24)</a></li>
+            <li><a href="#catalog" onclick="setCategory('sauces')" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Commercial Sauces (5)</a></li>
+            <li><a href="#catalog" onclick="setCategory('papad-pickle')" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Papads & Pickles (8)</a></li>
+            <li><a href="#catalog" onclick="setCategory('staples')" class="hover:text-spice-amber transition-colors flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3 h-3 text-stone-600"></i> Dry Goods & Other Items (8)</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-widest border-l-2 border-spice-amber pl-2" data-i18n="footerHubHeader">
+            Pune Central Hub
+          </h4>
+          <div class="space-y-2.5 text-stone-400">
+            <p class="leading-relaxed flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-spice-amber shrink-0 mt-0.5"></i>
+              <span><strong>OVP Quality Foods</strong><br />Pradhikaran, Nigdi, Pune, Maharashtra – 411044</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-spice-amber shrink-0"></i>
+              <a href="tel:+919637515153" class="hover:text-white font-bold transition-colors">+91 9637515153</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="instagram" class="w-4 h-4 text-pink-400 shrink-0"></i>
+              <a href="https://instagram.com/sattva.india_" target="_blank" class="hover:text-white transition-colors">@sattva.india_</a>
+            </p>
+            <p class="flex items-center gap-2 text-[11px] text-stone-500">
+              <i data-lucide="clock" class="w-4 h-4 text-stone-500 shrink-0"></i>
+              <span>Mon - Sat: 9:00 AM – 8:00 PM</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="py-6 border-b border-stone-800 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px]">
+        <div class="flex items-center gap-2 text-stone-400">
+          <i data-lucide="truck" class="w-4 h-4 text-spice-amber"></i>
+          <span class="font-bold text-stone-200">Daily PCMC & Pune Supply Routes:</span>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-2 text-stone-400">
+          <span class="bg-stone-800/80 px-2.5 py-1 rounded border border-stone-700">Nigdi • Pradhikaran</span>
+          <span class="bg-stone-800/80 px-2.5 py-1 rounded border border-stone-700">Bhosari & Chakan MIDC</span>
+          <span class="bg-stone-800/80 px-2.5 py-1 rounded border border-stone-700">Hinjewadi IT Corridor</span>
+          <span class="bg-stone-800/80 px-2.5 py-1 rounded border border-stone-700">Wakad • Baner • Kothrud</span>
+          <span class="bg-stone-800/80 px-2.5 py-1 rounded border border-stone-700">Viman Nagar • Hadapsar</span>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-stone-500 text-[11px]">
+        <div class="text-center sm:text-left">
+          <p>&copy; 2026 <strong>SATTVA INDIA</strong> (A unit of OVP Quality Foods). All Rights Reserved.</p>
+          <p class="mt-0.5 text-stone-600">FSSAI Registration & ISO 9001:2015 Quality Audited Unit.</p>
+        </div>
+        
+        <div class="flex items-center gap-4 text-stone-400">
+          <button onclick="openCertModal('fssai')" class="hover:text-spice-amber transition-colors">FSSAI License</button>
+          <span>•</span>
+          <button onclick="openCertModal('iso')" class="hover:text-spice-amber transition-colors">ISO Standards</button>
+          <span>•</span>
+          <button onclick="openCertModal('coa')" class="hover:text-spice-amber transition-colors">Batch COA Lab Reports</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-stone-200 px-4 py-2.5 flex items-center justify-between shadow-lg">
+    <a href="tel:+919637515153" class="flex flex-col items-center text-stone-600 hover:text-spice-700 transition-colors">
+      <i data-lucide="phone" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold mt-0.5">Call</span>
+    </a>
+    <a href="https://wa.me/919637515153?text=Hi%20Sattva%20India,%20I%20need%20a%20commercial%20quote." target="_blank" class="flex flex-col items-center text-emerald-600 transition-colors">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold mt-0.5">WhatsApp</span>
+    </a>
+    <button onclick="toggleDrawer(true)" class="flex flex-col items-center text-spice-700 relative">
+      <div class="relative">
+        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        <span id="mobileCartBadge" class="absolute -top-1 -right-2 w-4 h-4 bg-spice-700 text-white rounded-full text-[9px] font-bold flex items-center justify-center transition-transform">0</span>
+      </div>
+      <span class="text-[10px] font-bold mt-0.5">Quote</span>
+    </button>
+    <a href="#compliance" class="flex flex-col items-center text-stone-600 hover:text-spice-700 transition-colors">
+      <i data-lucide="shield-check" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold mt-0.5">COA Labs</span>
+    </a>
+  </div>
+
+  <div id="certModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative border border-stone-200 max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="certModalBox">
+      <button onclick="closeCertModal()" class="absolute right-5 top-5 text-stone-400 hover:text-stone-700 p-1 transition-colors">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="flex border-b border-stone-200 mb-6 gap-2 sm:gap-4 text-xs font-bold">
+        <button onclick="switchModalTab('fssai')" id="tab-fssai" class="pb-2.5 border-b-2 border-emerald-600 text-emerald-800 transition-all">FSSAI License</button>
+        <button onclick="switchModalTab('iso')" id="tab-iso" class="pb-2.5 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition-all">ISO 9001:2015</button>
+        <button onclick="switchModalTab('coa')" id="tab-coa" class="pb-2.5 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition-all">Lab COA Analysis</button>
+      </div>
+
+      <div id="content-fssai" class="space-y-4">
+        <div class="flex items-center gap-3 p-4 bg-emerald-50 border border-emerald-200 rounded-2xl">
+          <i data-lucide="shield-check" class="w-8 h-8 text-emerald-700 shrink-0"></i>
+          <div>
+            <h4 class="font-bold text-emerald-950 text-sm">Food Safety and Standards Authority of India (FSSAI)</h4>
+            <p class="text-xs text-emerald-800">Licensed Manufacturing, Processing & Repacking Unit</p>
+          </div>
+        </div>
+        <div class="space-y-2 text-xs text-stone-700">
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>License Holder:</strong> <span>OVP QUALITY FOODS (Sattva India)</span></div>
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>Facility Location:</strong> <span>Pradhikaran, Nigdi, Pune, MH - 411044</span></div>
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>Kind of Business:</strong> <span>Manufacturer / Wholesaler / Exporter</span></div>
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>Category Approvals:</strong> <span>Spices, Condiments, Sauces, Staples</span></div>
+        </div>
+      </div>
+
+      <div id="content-iso" class="space-y-4 hidden">
+        <div class="flex items-center gap-3 p-4 bg-blue-50 border border-blue-200 rounded-2xl">
+          <i data-lucide="award" class="w-8 h-8 text-blue-700 shrink-0"></i>
+          <div>
+            <h4 class="font-bold text-blue-950 text-sm">ISO 9001:2015 Quality Management System</h4>
+            <p class="text-xs text-blue-800">Standardized Batch Processing & Traceability</p>
+          </div>
+        </div>
+        <div class="space-y-2 text-xs text-stone-700">
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>Quality Standard:</strong> <span>ISO 9001:2015 Certified</span></div>
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>Scope of Audit:</strong> <span>Sourcing, Cold-Grinding, Custom Recipe Blending & Bulk Packing</span></div>
+          <div class="flex justify-between py-2 border-b border-stone-100"><strong>Batch Traceability:</strong> <span>Barcoded lot identification from farm lot to bagged consignment</span></div>
+        </div>
+      </div>
+
+      <div id="content-coa" class="space-y-4 hidden">
+        <div class="p-4 bg-amber-50 border border-amber-200 rounded-2xl">
+          <div class="flex items-center justify-between">
+            <h4 class="font-bold text-amber-950 text-sm">Batch Certificate of Analysis (COA)</h4>
+            <span class="text-[10px] font-bold bg-amber-200 text-amber-900 px-2 py-0.5 rounded">Standard Export Lot</span>
+          </div>
+          <p class="text-xs text-amber-800 mt-0.5">Representative chemical and microbiological parameters for ground spices.</p>
+        </div>
+
+        <table class="w-full text-left text-xs border border-stone-200 rounded-xl overflow-hidden">
+          <thead class="bg-stone-100 text-stone-800">
+            <tr>
+              <th class="p-2.5 border-b">Test Parameter</th>
+              <th class="p-2.5 border-b">Standard Limit</th>
+              <th class="p-2.5 border-b">Observed Value</th>
+              <th class="p-2.5 border-b">Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-200 text-stone-700">
+            <tr>
+              <td class="p-2.5 font-medium">Moisture Content</td>
+              <td class="p-2.5">&lt; 10.0%</td>
+              <td class="p-2.5 font-bold">8.4%</td>
+              <td class="p-2.5 text-emerald-600 font-bold">PASS</td>
+            </tr>
+            <tr>
+              <td class="p-2.5 font-medium">Total Ash Value</td>
+              <td class="p-2.5">&lt; 8.0%</td>
+              <td class="p-2.5 font-bold">6.1%</td>
+              <td class="p-2.5 text-emerald-600 font-bold">PASS</td>
+            </tr>
+            <tr>
+              <td class="p-2.5 font-medium">Sudan Dyes (I to IV)</td>
+              <td class="p-2.5">Absent</td>
+              <td class="p-2.5 font-bold">Not Detected</td>
+              <td class="p-2.5 text-emerald-600 font-bold">PASS</td>
+            </tr>
+            <tr>
+              <td class="p-2.5 font-medium">Total Aflatoxin</td>
+              <td class="p-2.5">&lt; 10 ppb</td>
+              <td class="p-2.5 font-bold">&lt; 4.2 ppb</td>
+              <td class="p-2.5 text-emerald-600 font-bold">PASS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-stone-200 flex justify-end">
+        <a href="https://wa.me/919637515153?text=Hi%20Sattva%20India,%20please%20send%20the%20official%20FSSAI%20and%20Batch%20COA%20documentation%20for%20our%20audit." target="_blank" class="inline-flex items-center gap-1.5 bg-spice-700 hover:bg-spice-800 text-white font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all hover:scale-105 active:scale-95">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Request Official Signed Copies
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    const translations = {
+      en: {
+        topCompliance: "FSSAI & ISO 9001:2015 Verified Facility",
+        navAbout: "About Us",
+        navSectors: "Supply Sectors",
+        navRoutes: "Logistics Hub",
+        navCatalog: "Catalog & Matrix",
+        navCert: "COA & Quality",
+        navQuoteDrawer: "Quote Drawer",
+        btnBulkPricing: "Submit Order",
+        heroBadge: "FSSAI & ISO Certified • Direct Milling & Bulk Food Partner",
+        heroTitle: "Precision Spice Formulations for Commercial Kitchens & Exporters.",
+        heroDesc: "Directly from our Nigdi milling facility. Select bulk sacks or request free chef sample kits, verify HPLC lab reports, and lock in consistent taste profiles.",
+        heroOrderBtn: "Build Custom Batch Order",
+        heroInspectCert: "Inspect Compliance",
+        proofHeader: "Verified Quality Metrics",
+        
+        // About Us
+        aboutTag: "Company Heritage",
+        aboutMainTitle: "Bridging Pure Farmlands with Commercial Kitchens",
+        aboutBadge: "Our Origin & Infrastructure",
+        aboutCardTitle: "OVP Quality Foods (Sattva India)",
+        aboutCardDesc: "Headquartered at Pradhikaran, Nigdi, Pune, we operate state-of-the-art cold-milling and automated batch-packaging units engineered specifically to serve high-consumption institutional food sectors.",
+        aboutCustomTitle: "Custom Blend Formulation",
+        aboutCustomDesc: "We work directly with Master Chefs and Hotel F&B Heads to lock in unique garam masala, biryani, or curry formulations with zero batch-to-batch variation.",
+        aboutP1: "Founded with a commitment to pure, unadulterated spices and institutional food supplies, Sattva India (OVP Quality Foods) has grown to become the preferred partner for leading hospitality groups, caterers, educational messes, and international spice distributors across Maharashtra and beyond.",
+        aboutP2: "Unlike standard commercial suppliers, our procurement model originates directly from India's primary spice hubs—Byadgi and Guntur for chili, Salem and Sangli for turmeric, Unjha for cumin, and Kerala for Tellicherry black pepper. Our low-temperature milling protects essential oils, volatility, and natural pungency without synthetic fillers, artificial starch, or artificial coloring agents.",
+        aboutPillar1: "Hygienic Milling",
+        aboutPillar2: "Lab Verified",
+        aboutPillar3: "Flexible Sizing",
+
+        // Sectors
+        sectorTag: "Institutional Segments",
+        sectorTitle: "Dedicated Solutions for Every Commercial Scale",
+        sectorDesc: "We tailor our volume slabs, recipe profiles, and delivery schedules to meet the stringent demands of each commercial sector.",
+        sec1Title: "Hotels, Cafes & Restaurants",
+        sec1Desc: "Consistent gravy bases, authentic tandoori and biryani masalas, sauces, and kitchen pantry items with standardized portioning and flavor lock.",
+        sec2Title: "Hostels, Messes & Canteens",
+        sec2Desc: "Engineered for large-scale institutional cafeterias, engineering college messes, and factory dining facilities requiring high yields and wholesale efficiency.",
+        sec3Title: "Wholesale Retail & Kirana",
+        sec3Desc: "Retail-ready packaging for supermarkets, grocery chains, and distributor networks with barcoding, long shelf-life sealing, and healthy distributor margins.",
+        sec4Title: "Global Exports & OEM",
+        sec4Desc: "Machine-cleaned, sorted, low-moisture whole and powdered spices compliant with international Phytosanitary and Spice Board benchmarks.",
+
+        routeTag: "Local Pune Logistics",
+        routeTitle: "Daily Scheduled Delivery Grid",
+        routeDesc: "Operating from our central Nigdi hub with guaranteed regular supply runs across major industrial & HoReCa clusters.",
+        certTag: "Transparency & Quality Control",
+        certTitle: "Live Certifications & Batch COA Reports",
+        certDesc: "Audit our compliance benchmarks before purchasing. We provide batch-specific testing for high-volume commercial kitchens and exporters.",
+        catalogTag: "Interactive Inventory Matrix",
+        catalogTitle: "Wholesale Product Order Matrix",
+        catalogDesc: "Choose packaging formats or request testing samples directly into your procurement drawer.",
+        catMasale: "Ground Masale (20)",
+        catWhole: "Whole Spices & Dry Fruits (24)",
+        catSauces: "Sauces (5)",
+        catPapadPickle: "Papad & Pickles (8)",
+        catStaples: "Pantry & Other Items (8)",
+        formTag: "Direct Wholesale Inquiries",
+        formTitle: "Structured Quotation Summary",
+        formDesc: "Your customized quantities and pack units from the catalog are automatically populated below.",
+        formLabelBiz: "Business Name *",
+        formLabelPhone: "WhatsApp Mobile *",
+        formLabelSector: "Operation Sector",
+        formLabelLoc: "Delivery Destination",
+        formLabelReq: "Configured Items in Quote",
+        formBtnSend: "Transmit Order Quote to WhatsApp Desk",
+
+        // Footer
+        footerBrandBio: "Your trusted B2B institutional food partner. Specializing in single-origin whole spices, cold-ground customized masala blends, pickles, sauces, and kitchen dry goods for HoReCa and global export consignments.",
+        footerSecHeader: "Supply Sectors",
+        footerCatHeader: "Product Portfolio",
+        footerHubHeader: "Pune Central Hub"
+      },
+      mr: {
+        topCompliance: "FSSAI आणि ISO 9001:2015 प्रमाणित युनिट",
+        navAbout: "आमच्याबद्दल",
+        navSectors: "पुरवठा क्षेत्रे",
+        navRoutes: "वितरण मार्ग",
+        navCatalog: "उत्पादने व दर",
+        navCert: "लॅब रिपोर्ट (COA)",
+        navQuoteDrawer: "ऑर्डर यादी",
+        btnBulkPricing: "ऑर्डर पाठवा",
+        heroBadge: "FSSAI आणि ISO प्रमाणित • थेट उत्पादन आणि अन्न पुरवठादार",
+        heroTitle: "हॉटेल्स, केटरर्स आणि निर्यातदारांसाठी अस्सल दर्जेदार मसाले.",
+        heroDesc: "निगडी, पुणे येथील आमच्या प्रोसेसिंग युनिटमधून थेट पुरवठा. मोफत शेफ सॅम्पल किंवा घाऊक पोती निवडून ऑर्डर करा.",
+        heroOrderBtn: "होलसेल ऑर्डर तयार करा",
+        heroInspectCert: "प्रमाणपत्रे तपासा",
+        proofHeader: "तपासलेले गुणवत्ता निकष",
+
+        // About Us
+        aboutTag: "कंपनीचा वारसा",
+        aboutMainTitle: "थेट शेतातून शुद्ध मसाल्यांची व्यावसायिक किचनला जोड",
+        aboutBadge: "आमची पायाभूत सुविधा",
+        aboutCardTitle: "OVP क्वालिटी फूड्स (सत्त्व इंडिया)",
+        aboutCardDesc: "प्राधिकरण, निगडी, पुणे येथे स्थित आमचे अत्याधुनिक कोल्ड-मिल्लिंग युनिट व्यावसायिक हॉटेल्स आणि संस्थांना दर्जेदार खाद्यपदार्थ पुरवण्यासाठी सज्ज आहे.",
+        aboutCustomTitle: "कस्टम मसाला फॉर्म्युलेशन",
+        aboutCustomDesc: "आम्ही हॉटेल्स आणि केटरर्सच्या गरजेनुसार खास गरम मसाला आणि बिर्याणी मसाला चव न बदलता तयार करून देतो.",
+        aboutP1: "शुद्ध आणि भेसळमुक्त मसाले पुरवण्याच्या ध्येयाने सुरू झालेली सत्त्व इंडिया (OVP क्वालिटी फूड्स) आज महाराष्ट्रातील नामांकित हॉटेल्स, केटरर्स आणि मेसची पहिली पसंती बनली आहे.",
+        aboutP2: "ब्याडगी मिरची, हळद, उंझा जिरे आणि केरळची काळी मिरी थेट मूळ ठिकाणाहून मागवून आम्ही कमी तापमानावर दळतो, ज्यामुळे मसाल्यांचा नैसर्गिक सुगंध आणि रंग टिकून राहतो.",
+        aboutPillar1: "हायजिनिक दळण",
+        aboutPillar2: "लॅब टेस्टेड",
+        aboutPillar3: "विविध पॅकिंग",
+
+        // Sectors
+        sectorTag: "संस्थात्मक क्षेत्रे",
+        sectorTitle: "प्रत्येक व्यावसायिक गरजेसाठी परिपूर्ण पुरवठा",
+        sectorDesc: "हॉटेल्सपासून ते मोठ्या औद्योगिक मेसपर्यंत आम्ही नियमित आणि वेळेवर माल पुरवतो.",
+        sec1Title: "हॉटेल्स, कॅफे आणि रेस्टॉरंट्स",
+        sec1Desc: "रेस्टॉरंटच्या चवीला साजेसे दर्जेदार गरम मसाले, ग्रेव्ही मसाले, सॉस आणि पापड-लोणचे.",
+        sec2Title: "हॉस्टेल, कॉलेज आणि कंपनी मेस",
+        sec2Desc: "मोठ्या प्रमाणावर लागणाऱ्या अन्नासाठी जास्त यील्ड (उतारा) देणारे परवडणारे घाऊक मसाले आणि धान्य.",
+        sec3Title: "घाऊक व्यापारी आणि किराणा सुपरमार्केट",
+        sec3Desc: "सुंदर पॅकिंग आणि उत्तम कमिशन मार्जिनसह ग्राहकांच्या पसंतीस उतरणारी उत्पादने.",
+        sec4Title: "ग्लोबल एक्सपोर्ट्स आणि OEM",
+        sec4Desc: "आंतरराष्ट्रीय दर्जाचे मशीन-क्लीन खडे मसाले, व्हॅक्यूम पॅकिंग आणि सर्व सरकारी कागदपत्रांसह.",
+
+        routeTag: "पुणे व पिंपरी चिंचवड पुरवठा",
+        routeTitle: "दररोजचे वितरण वेळापत्रक",
+        routeDesc: "निगडी येथील मुख्य गोदामातून सर्व एमआयडीसी आणि हॉटेल क्लस्टर्समध्ये दररोज डिलिव्हरी.",
+        certTag: "पारदर्शकता आणि गुणवत्ता",
+        certTitle: "प्रमाणपत्रे आणि लॅब टेस्ट रिपोर्ट (COA)",
+        certDesc: "खरेदी करण्यापूर्वी आमची सर्व सरकारी प्रमाणपत्रे आणि लॅब रिपोर्ट तपासा.",
+        catalogTag: "उत्पादन यादी",
+        catalogTitle: "घाऊक मसाला आणि किराणा दर यादी",
+        catalogDesc: "पॅकिंग किंवा टेस्ट सॅम्पल निवडून त्वरित WhatsApp वर कोटेशन मिळवा.",
+        catMasale: "दळलेले मसाले (२०)",
+        catWhole: "अख्खे खडे मसाले व ड्रायफ्रुट्स (२४)",
+        catSauces: "सॉसेस (५)",
+        catPapadPickle: "पापड आणि लोणचे (८)",
+        catStaples: "इतर किराणा सामान (८)",
+        formTag: "थेट घाऊक चौकशी",
+        formTitle: "ऑर्डर कोटेशन तपशील",
+        formDesc: "तुम्ही निवडलेली उत्पादने आणि प्रमाण खाली आपोआप जोडले गेले आहे.",
+        formLabelBiz: "व्यवसाय / हॉटेलचे नाव *",
+        formLabelPhone: "WhatsApp नंबर *",
+        formLabelSector: "व्यवसायाचा प्रकार",
+        formLabelLoc: "माल पोहोचवण्याचा पत्ता",
+        formLabelReq: "निवडलेली उत्पादने आणि प्रमाण",
+        formBtnSend: "WhatsApp वर कोटेशन पाठवा",
+
+        // Footer
+        footerBrandBio: "तुमचा हक्काचा B2B अन्न पुरवठादार. हॉटेल, केटरर्स, मेस आणि निर्यातीसाठी शुद्ध खडे मसाले, अस्सल दळलेले मसाले, लोणचे, सॉसेस आणि किराणा साहित्याचा खात्रीशीर पुरवठा.",
+        footerSecHeader: "पुरवठा क्षेत्रे",
+        footerCatHeader: "उत्पादन श्रेणी",
+        footerHubHeader: "पुणे मुख्य वितरण केंद्र"
+      },
+      hi: {
+        topCompliance: "FSSAI और ISO 9001:2015 प्रमाणित यूनिट",
+        navAbout: "हमारे बारे में",
+        navSectors: "सप्लाई सेक्टर",
+        navRoutes: "लॉजिस्टिक्स ग्रिड",
+        navCatalog: "कैटलॉग व ऑर्डर",
+        navCert: "लैब COA रिपोर्ट",
+        navQuoteDrawer: "ऑर्डर ड्रावर",
+        btnBulkPricing: "ऑर्डर भेजें",
+        heroBadge: "FSSAI और ISO प्रमाणित • सीधे मिल से थोक खाद्य आपूर्ति",
+        heroTitle: "होटल, कैटरिंग और निर्यातकों के लिए शुद्ध मसाले और खाद्यान्न।",
+        heroDesc: "निगड़ी, पुणे स्थित हमारी प्रोसेसिंग यूनिट से सीधे सप्लाई। बल्क पैक या शेफ टेस्टिंग सैंपल चुनकर ऑर्डर करें।",
+        heroOrderBtn: "थोक ऑर्डर बनाएं",
+        heroInspectCert: "सर्टिफिकेट देखें",
+        proofHeader: "गुणवत्ता मानक",
+
+        // About Us
+        aboutTag: "कंपनी का इतिहास",
+        aboutMainTitle: "खेतों की शुद्धता और कमर्शियल किचन का अटूट भरोसा",
+        aboutBadge: "हमारा इंफ्रास्ट्रक्चर",
+        aboutCardTitle: "OVP क्वालिटी फूड्स (सत्त्व इंडिया)",
+        aboutCardDesc: "प्राधिकरण, निगड़ी, पुणे में स्थित हमारा आधुनिक कोल्ड-मिलिंग प्लांट बड़े होटलों और संस्थानों को प्रीमियम खाद्यान्न आपूर्ति के लिए समर्पित है।",
+        aboutCustomTitle: "कस्टम मसाला ब्लेंडिंग",
+        aboutCustomDesc: "हम शेफ की आवश्यकता के अनुसार विशेष गरम मसाला और बिरयानी मसाला तैयार करते हैं जिसकी स्वाद गुणवत्ता हमेशा एक समान रहती है।",
+        aboutP1: "शुद्धता और भरोसे के साथ शुरू हुई सत्त्व इंडिया (OVP क्वालिटी फूड्स) आज महाराष्ट्र के शीर्ष होटलों, कैटरर्स और औद्योगिक कैंटीनों का प्रमुख सप्लायर बन चुकी है।",
+        aboutP2: "ब्याडगी मिर्च, हल्दी, जीरा और केरल की काली मिर्च सीधे किसानों से लाकर कोल्ड-मिलिंग तकनीक से पीसी जाती है, ताकि उनका प्राकृतिक रंग और स्वाद पूरी तरह सुरक्षित रहे।",
+        aboutPillar1: "हाइजीनिक मिलिंग",
+        aboutPillar2: "लैब टेस्टेड",
+        aboutPillar3: "फ्लेक्सिबल पैकिंग",
+
+        // Sectors
+        sectorTag: "संस्थागत क्षेत्र",
+        sectorTitle: "हर कमर्शियल सेक्टर के लिए अनुकूलित समाधान",
+        sectorDesc: "होटलों से लेकर बड़ी कैंटीनों तक, हम समय पर और सही मात्रा में शुद्ध माल की डिलीवरी सुनिश्चित करते हैं।",
+        sec1Title: "होटल, रेस्तरां और कैफे",
+        sec1Desc: "ग्रेवी बेस, स्पेशल तंदूरी, बिरयानी मसाले और सॉस की निरंतर आपूर्ति।",
+        sec2Title: "हॉस्टल, कॉलेज और मेस",
+        sec2Desc: "बड़े पैमाने पर बनने वाले भोजन के लिए अधिक यील्ड देने वाले किफायती थोक मसाले और अनाज।",
+        sec3Title: "थोक विक्रेता और सुपरमार्केट",
+        sec3Desc: "आकर्षक पैकिंग और अच्छे डिस्ट्रीब्यूटर मार्जिन के साथ फास्ट मूविंग किराना उत्पाद।",
+        sec4Title: "ग्लोबल एक्सपोर्ट्स और OEM",
+        sec4Desc: "मशीन से साफ किए गए खडे मसाले, वैक्यूम पैकिंग और सभी सरकारी निर्यात प्रमाणपत्रों के साथ।",
+
+        routeTag: "पुणे एवं पिंपरी लॉजिस्टिक्स",
+        routeTitle: "दैनिक डिलीवरी शेड्यूल",
+        routeDesc: "निगड़ी हब से सभी प्रमुख होटल व औद्योगिक क्षेत्रों में नियमित डिलीवरी।",
+        certTag: "पारदर्शिता और शुद्धता",
+        certTitle: "लाइव सर्टिफिकेशन और लैब COA रिपोर्ट",
+        certDesc: "ऑर्डर देने से पहले हमारे सभी सरकारी लाइसेंस और लैब टेस्टिंग रिपोर्ट की जांच करें।",
+        catalogTag: "उत्पाद सूची",
+        catalogTitle: "थोक उत्पाद एवं मसाला ऑर्डर मैट्रिक्स",
+        catalogDesc: "पैकिंग साइज या टेस्टिंग सैंपल चुनकर तुरंत WhatsApp कोटेशन प्राप्त करें।",
+        catMasale: "पिसे हुए मसाले (२०)",
+        catWhole: "खड़े मसाले और ड्राई फ्रूट्स (२४)",
+        catSauces: "सॉस (५)",
+        catPapadPickle: "पापड़ और अचार (८)",
+        catStaples: "अन्य किराना सामग्री (८)",
+        formTag: "सीधी थोक पूछताछ",
+        formTitle: "ऑर्डर कोटेशन सारांश",
+        formDesc: "कैटलॉग से चुने गए उत्पाद और मात्रा नीचे स्वतः जुड़ गए हैं।",
+        formLabelBiz: "फर्म / होटल का नाम *",
+        formLabelPhone: "WhatsApp नंबर *",
+        formLabelSector: "व्यवसाय का प्रकार",
+        formLabelLoc: "डिलीवरी का स्थान",
+        formLabelReq: "चुने गए उत्पाद और मात्रा",
+        formBtnSend: "WhatsApp पर कोटेशन भेजें",
+
+        // Footer
+        footerBrandBio: "आपका विश्वसनीय B2B खाद्य आपूर्ति साझेदार। होटल, कैटरर्स, मेस और निर्यातकों के लिए शुद्ध खड़े मसाले, पिसे हुए मसाले, सॉस और किराना उत्पादों की थोक आपूर्ति।",
+        footerSecHeader: "सप्लाई सेक्टर",
+        footerCatHeader: "उत्पाद श्रेणियां",
+        footerHubHeader: "पुणे वितरण केंद्र"
+      }
+    };
+
+    // Full 65 Products parsed from your listing
+    const catalogData = [
+      // 1. LISTING OF MASALE (20 Items)
+      { id: 1, name: "Laal Mirchi Powder", cat: "masale", color: "#991B1B", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "High Pungency" },
+      { id: 2, name: "Kashmiri Mirchi Powder", cat: "masale", color: "#B91C1C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Vibrant Red" },
+      { id: 3, name: "Halad", cat: "masale", color: "#D97706", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "High Curcumin" },
+      { id: 4, name: "Dhana", cat: "masale", color: "#854D0E", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Aromatic Pure" },
+      { id: 5, name: "Kanda Lasun Masala", cat: "masale", color: "#7F1D1D", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "MH Signature" },
+      { id: 6, name: "Garam Masala", cat: "masale", color: "#451A03", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Royal Blend" },
+      { id: 7, name: "Goda Masala", cat: "masale", color: "#292524", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Authentic Sweet Spice" },
+      { id: 8, name: "Mutton Masala", cat: "masale", color: "#78350F", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Bold & Spicy" },
+      { id: 9, name: "Chicken Masala", cat: "masale", color: "#9A3412", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Rich Gravy" },
+      { id: 10, name: "Pav Bhaji Masala", cat: "masale", color: "#C2410C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "HoReCa Grade" },
+      { id: 11, name: "Sambar Masala", cat: "masale", color: "#B45309", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "South Classic" },
+      { id: 12, name: "Kitchen King Masala", cat: "masale", color: "#A16207", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "All-Round Curry" },
+      { id: 13, name: "Chole Masala", cat: "masale", color: "#92400E", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Tangy & Robust" },
+      { id: 14, name: "Chat Masala", cat: "masale", color: "#CA8A04", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Zesty Zing" },
+      { id: 15, name: "Biryani Masala", cat: "masale", color: "#B45309", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Dum Aroma" },
+      { id: 16, name: "Sunday Garam Masala", cat: "masale", color: "#581C87", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Chef's Special" },
+      { id: 17, name: "Tandoori Masala", cat: "masale", color: "#DC2626", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Smoky Red" },
+      { id: 18, name: "Fish Curry Masala", cat: "masale", color: "#EA580C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Coastal Profile" },
+      { id: 19, name: "Amchur Powder", cat: "masale", color: "#D97706", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Natural Sour" },
+      { id: 20, name: "Egg Curry Masala", cat: "masale", color: "#C2410C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Savory Blend" },
+
+      // 2. LISTING OF SAUCES (5 Items)
+      { id: 21, name: "Red Chillie Sauce", cat: "sauces", color: "#EF4444", packUnits: ["650g Bottle", "5kg Commercial Jar"], tag: "Culinary" },
+      { id: 22, name: "Green Chillie Sauce", cat: "sauces", color: "#22C55E", packUnits: ["650g Bottle", "5kg Commercial Jar"], tag: "Sharp Pungent" },
+      { id: 23, name: "Tomato Sauce", cat: "sauces", color: "#E11D48", packUnits: ["1kg Pouch", "5kg Commercial Jar"], tag: "Puree Thick" },
+      { id: 24, name: "Soya Sauce", cat: "sauces", color: "#27272A", packUnits: ["650g Bottle", "5kg Commercial Jar"], tag: "Naturally Brewed" },
+      { id: 25, name: "Dark Soya Sauce", cat: "sauces", color: "#09090B", packUnits: ["650g Bottle", "5kg Commercial Jar"], tag: "Caramelized" },
+
+      // 3. LISTING OF PAPAD & PICKLE (8 Items)
+      { id: 26, name: "Bobby", cat: "papad-pickle", color: "#F59E0B", packUnits: ["Bulk Master Box", "5kg Sack"], tag: "Crispy Fryum" },
+      { id: 27, name: "Udid Papad", cat: "papad-pickle", color: "#E5E7EB", packUnits: ["1kg Pack", "5kg Catering Pack"], tag: "Crispy Pepper" },
+      { id: 28, name: "Jeera Papad", cat: "papad-pickle", color: "#D1D5DB", packUnits: ["1kg Pack", "5kg Catering Pack"], tag: "Cumin Infused" },
+      { id: 29, name: "Nachni Papad", cat: "papad-pickle", color: "#78350F", packUnits: ["1kg Pack", "5kg Catering Pack"], tag: "Healthy Millet" },
+      { id: 30, name: "Rice Papad", cat: "papad-pickle", color: "#F3F4F6", packUnits: ["1kg Pack", "5kg Catering Pack"], tag: "Traditional White" },
+      { id: 31, name: "Mango Pickle", cat: "papad-pickle", color: "#D97706", packUnits: ["1kg Jar", "5kg Bucket", "15kg Commercial Drum"], tag: "Mustard Oil" },
+      { id: 32, name: "Mix Pickle", cat: "papad-pickle", color: "#B45309", packUnits: ["1kg Jar", "5kg Bucket", "15kg Commercial Drum"], tag: "HoReCa Bucket" },
+      { id: 33, name: "Mirchi Pickle", cat: "papad-pickle", color: "#15803D", packUnits: ["1kg Jar", "5kg Bucket", "15kg Commercial Drum"], tag: "Spicy Green" },
+
+      // 4. LISTING OF WHOLE SPICES & DRY FRUITS (24 Items)
+      { id: 34, name: "Lavang", cat: "whole", color: "#2E1065", packUnits: ["1kg Pouch", "5kg Bag", "25kg Box"], tag: "High Essential Oils" },
+      { id: 35, name: "Kaali Meeri", cat: "whole", color: "#1C1917", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Tellicherry Bold" },
+      { id: 36, name: "Dalchini", cat: "whole", color: "#78350F", packUnits: ["1kg Pouch", "5kg Bag", "25kg Box"], tag: "Sweet Woody" },
+      { id: 37, name: "Star Phool", cat: "whole", color: "#92400E", packUnits: ["1kg Pouch", "5kg Bag", "25kg Box"], tag: "Intact Stars" },
+      { id: 38, name: "Dagad Phool", cat: "whole", color: "#57534E", packUnits: ["500g Bag", "1kg Bag", "10kg Box"], tag: "Stone Flower" },
+      { id: 39, name: "Tej patta", cat: "whole", color: "#4D7C0F", packUnits: ["500g Bag", "5kg Bag", "10kg Bale"], tag: "Cleaned Leaf" },
+      { id: 40, name: "Green Elaichi", cat: "whole", color: "#15803D", packUnits: ["500g Pouch", "1kg Pouch", "5kg Box"], tag: "7-8mm Green" },
+      { id: 41, name: "Masala Elaichi", cat: "whole", color: "#3F2E23", packUnits: ["500g Pouch", "1kg Pouch", "10kg Box"], tag: "Smoky Black" },
+      { id: 42, name: "Aakha Dhana", cat: "whole", color: "#A16207", packUnits: ["5kg Bag", "25kg Sack", "50kg Sack"], tag: "Whole Coriander" },
+      { id: 43, name: "Meethi Dana", cat: "whole", color: "#CA8A04", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Machine Cleaned" },
+      { id: 44, name: "Ajwain", cat: "whole", color: "#854D0E", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "High Thymol" },
+      { id: 45, name: "Jeer", cat: "whole", color: "#713F12", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack", "50kg Sack"], tag: "Unjha Cumin" },
+      { id: 46, name: "Rai", cat: "whole", color: "#000000", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack", "50kg Sack"], tag: "Mustard Seeds" },
+      { id: 47, name: "Green Badi Saunf", cat: "whole", color: "#65A30D", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Sweet Fennel" },
+      { id: 48, name: "Tanatan Badi Saunf", cat: "whole", color: "#4D7C0F", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Premium Bold" },
+      { id: 49, name: "Sesame seeds (Til)", cat: "whole", color: "#F4F4F5", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "White / Natural" },
+      { id: 50, name: "Kishmish", cat: "whole", color: "#EAB308", packUnits: ["1kg Pouch", "5kg Box", "10kg Box"], tag: "Nashik Raisins" },
+      { id: 51, name: "Kaju Kani", cat: "whole", color: "#FEF08A", packUnits: ["1kg Pouch", "5kg Box", "10kg Box"], tag: "Cashew Bits" },
+      { id: 52, name: "Kaju Pakli", cat: "whole", color: "#FEF9C3", packUnits: ["1kg Pouch", "5kg Box", "10kg Box"], tag: "2-Piece Splits" },
+      { id: 53, name: "Magazbeej", cat: "whole", color: "#FAFAFA", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Melon Seeds" },
+      { id: 54, name: "Gota Khobra", cat: "whole", color: "#78350F", packUnits: ["Bags / Wholesale Consignment"], tag: "Whole Dry Coconut" },
+      { id: 55, name: "Khobra Powder", cat: "whole", color: "#F5F5F4", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Desiccated Coconut" },
+      { id: 56, name: "Byadgi Mirchi", cat: "whole", color: "#DC2626", packUnits: ["5kg Bag", "25kg Bale", "50kg Bale"], tag: "Deep Color / Low Heat" },
+      { id: 57, name: "Lavangi Mirchi", cat: "whole", color: "#991B1B", packUnits: ["5kg Bag", "25kg Bale", "50kg Bale"], tag: "High Pungent Heat" },
+
+      // 5. LISTING OF OTHER ITEMS / STAPLES (8 Items)
+      { id: 58, name: "Noodles", cat: "staples", color: "#FDE047", packUnits: ["Master Bulk Carton", "Bulk Box"], tag: "Commercial Grade" },
+      { id: 59, name: "Shevai", cat: "staples", color: "#FEF08A", packUnits: ["Bulk Bag", "Master Sack"], tag: "Hard Wheat" },
+      { id: 60, name: "Cournflour", cat: "staples", color: "#FFFFFF", packUnits: ["1kg Pouch", "5kg Bag", "25kg Sack"], tag: "Thickening Starch" },
+      { id: 61, name: "Hing", cat: "staples", color: "#A8A29E", packUnits: ["100g Jar", "500g Jar", "1kg Jar"], tag: "Compounded Asafoetida" },
+      { id: 62, name: "Emli", cat: "staples", color: "#451A03", packUnits: ["1kg Slab", "10kg Slab", "25kg Box"], tag: "Seedless Tamarind" },
+      { id: 63, name: "Kasuri Meethi", cat: "staples", color: "#166534", packUnits: ["500g Box", "1kg Box", "5kg Bag"], tag: "Nagauri Fragrant" },
+      { id: 64, name: "Rice", cat: "staples", color: "#F8FAFC", packUnits: ["25kg Bag", "50kg Bag"], tag: "Commercial / Basmati" },
+      { id: 65, name: "Wheel Powder", cat: "staples", color: "#38BDF8", packUnits: ["Institutional Cleaning Sack"], tag: "Kitchen Cleaning Utility" }
+    ];
+
+    let cart = {};
+    let orderMode = 'bulk';
+    let currentCategory = 'all';
+
+    function setMode(mode) {
+      orderMode = mode;
+      if (mode === 'bulk') {
+        document.getElementById('mode-bulk').className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-spice-700 text-white transition-all flex items-center gap-1.5 shadow-sm";
+        document.getElementById('mode-sample').className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-stone-600 hover:text-stone-900 transition-all flex items-center gap-1.5";
+      } else {
+        document.getElementById('mode-sample').className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-spice-700 text-white transition-all flex items-center gap-1.5 shadow-sm";
+        document.getElementById('mode-bulk').className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-stone-600 hover:text-stone-900 transition-all flex items-center gap-1.5";
+      }
+      showToast(`Switched to ${mode === 'bulk' ? 'Commercial Bulk Packaging Mode' : 'Free Chef Sample Kit Mode (50-100g)'}`);
+      renderCatalog();
+    }
+
+    function renderCatalog() {
+      const grid = document.getElementById('productGrid');
+      const search = document.getElementById('productSearch').value.toLowerCase();
+      grid.innerHTML = '';
+
+      const filtered = catalogData.filter(item => {
+        const matchCat = currentCategory === 'all' || item.cat === currentCategory;
+        const matchSearch = item.name.toLowerCase().includes(search) || item.tag.toLowerCase().includes(search);
+        return matchCat && matchSearch;
+      });
+
+      filtered.forEach(p => {
+        const inCart = cart[p.name];
+        const defaultPack = orderMode === 'sample' ? 'Sample Kit (100g Packet)' : p.packUnits[0];
+        const currentUnit = inCart ? inCart.unit : defaultPack;
+        const currentQty = inCart ? inCart.qty : 1;
+
+        const card = document.createElement('div');
+        card.className = `bg-white rounded-2xl p-5 border transition-all duration-300 flex flex-col justify-between hover-lift ${inCart ? 'border-spice-700 ring-2 ring-spice-700/20 shadow-md' : 'border-stone-200 hover:border-stone-400'}`;
+        
+        card.innerHTML = `
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-1.5">
+              <div class="flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-full shrink-0 border border-stone-300" style="background-color: ${p.color}"></span>
+                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-stone-100 text-stone-600 tracking-wider">${p.tag}</span>
+              </div>
+              ${inCart ? '<span class="text-[11px] font-bold text-spice-700 bg-red-50 px-2 py-0.5 rounded animate-pulse">In Quote</span>' : ''}
+            </div>
+            <h4 class="font-serif font-bold text-stone-900 text-base leading-snug mt-1">${p.name}</h4>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-stone-100 space-y-2.5">
+            ${orderMode === 'bulk' ? `
+              <div>
+                <label class="block text-[10px] uppercase font-bold text-stone-500 mb-1">Pack Format:</label>
+                <select id="unit-${p.id}" class="w-full text-xs font-semibold bg-stone-50 border border-stone-300 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-spice-700 transition-all">
+                  ${p.packUnits.map(u => `<option value="${u}" ${u === currentUnit ? 'selected' : ''}>${u}</option>`).join('')}
+                </select>
+              </div>
+            ` : `
+              <div class="p-2 bg-amber-50 rounded-lg border border-amber-200 text-[11px] text-amber-900 font-medium">
+                Chef Trial Packet: <strong>100g Sealed</strong>
+                <input type="hidden" id="unit-${p.id}" value="Chef Sample (100g)" />
+              </div>
+            `}
+
+            <div>
+              <label class="block text-[10px] uppercase font-bold text-stone-500 mb-1">Quantity (Units):</label>
+              <div class="flex items-center gap-2">
+                <div class="flex items-center border border-stone-300 rounded-lg bg-stone-50 overflow-hidden">
+                  <button onclick="stepQty(${p.id}, -1)" class="px-2.5 py-1.5 text-stone-600 hover:bg-stone-200 font-bold text-xs transition-colors">-</button>
+                  <input type="number" min="1" max="1000" id="qty-${p.id}" value="${currentQty}" class="w-12 text-center text-xs font-bold bg-transparent focus:outline-none" />
+                  <button onclick="stepQty(${p.id}, 1)" class="px-2.5 py-1.5 text-stone-600 hover:bg-stone-200 font-bold text-xs transition-colors">+</button>
+                </div>
+                
+                <button onclick="updateCartLine(${p.id}, '${p.name}')" class="flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1 active:scale-95 ${inCart ? 'bg-stone-900 text-white hover:bg-stone-800' : 'bg-spice-700 text-white hover:bg-spice-800 shadow-sm'}">
+                  <i data-lucide="${inCart ? 'check' : 'plus'}" class="w-3.5 h-3.5"></i> ${inCart ? 'Update' : 'Add Units'}
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    function stepQty(id, delta) {
+      const input = document.getElementById(`qty-${id}`);
+      let val = parseInt(input.value) || 1;
+      val = Math.max(1, val + delta);
+      input.value = val;
+    }
+
+    function updateCartLine(id, name) {
+      const unit = document.getElementById(`unit-${id}`).value;
+      const qty = parseInt(document.getElementById(`qty-${id}`).value) || 1;
+
+      cart[name] = { unit, qty };
+      updateCartUI();
+      renderCatalog();
+      renderDrawer();
+      showToast(`Added ${qty} × [${unit}] of ${name}`);
+
+      const navBadge = document.getElementById('navCartCount');
+      const mobileBadge = document.getElementById('mobileCartBadge');
+      navBadge.classList.add('animate-badge-pop');
+      mobileBadge.classList.add('animate-badge-pop');
+      setTimeout(() => {
+        navBadge.classList.remove('animate-badge-pop');
+        mobileBadge.classList.remove('animate-badge-pop');
+      }, 350);
+    }
+
+    function removeFromCart(name) {
+      delete cart[name];
+      updateCartUI();
+      renderCatalog();
+      renderDrawer();
+      showToast(`Removed ${name} from quote`);
+    }
+
+    function clearCart() {
+      cart = {};
+      updateCartUI();
+      renderCatalog();
+      renderDrawer();
+      showToast('Cleared all items in quotation drawer');
+    }
+
+    function updateCartUI() {
+      const keys = Object.keys(cart);
+      const count = keys.length;
+      document.getElementById('navCartCount').textContent = count;
+      document.getElementById('mobileCartBadge').textContent = count;
+      document.getElementById('drawerTotalCount').textContent = count;
+      document.getElementById('itemCounterBadge').textContent = `${count} configured item(s)`;
+
+      const reqBox = document.getElementById('bizRequirements');
+      if (count > 0) {
+        let lines = keys.map(k => `• ${cart[k].qty} × [${cart[k].unit}] of ${k}`);
+        reqBox.value = `Customized Batch Quotation:\n${lines.join('\n')}\n\nDelivery Instructions / Target Timeline:\n`;
+      } else {
+        reqBox.value = '';
+      }
+    }
+
+    function renderDrawer() {
+      const list = document.getElementById('drawerItemList');
+      const keys = Object.keys(cart);
+
+      if (keys.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-12 text-stone-400 space-y-2">
+            <i data-lucide="shopping-bag" class="w-10 h-10 mx-auto opacity-30"></i>
+            <p class="text-xs">Your quotation drawer is empty.</p>
+            <p class="text-[11px] text-stone-500">Add products from the catalog matrix.</p>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      list.innerHTML = '';
+      keys.forEach(k => {
+        const item = cart[k];
+        const row = document.createElement('div');
+        row.className = "p-3.5 bg-stone-50 rounded-xl border border-stone-200 flex items-center justify-between gap-3 hover:border-stone-300 transition-colors";
+        row.innerHTML = `
+          <div class="flex-1">
+            <h5 class="font-bold text-stone-900 text-xs">${k}</h5>
+            <div class="text-[11px] text-stone-500 font-medium mt-0.5">${item.qty} × ${item.unit}</div>
+          </div>
+          <button onclick="removeFromCart('${k}')" class="text-stone-400 hover:text-spice-700 p-1 transition-colors">
+            <i data-lucide="trash-2" class="w-4 h-4"></i>
+          </button>
+        `;
+        list.appendChild(row);
+      });
+
+      lucide.createIcons();
+    }
+
+    function toggleDrawer(show) {
+      const drawer = document.getElementById('quoteDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+      if (show) {
+        renderDrawer();
+        backdrop.classList.remove('hidden');
+        setTimeout(() => backdrop.classList.add('opacity-100'), 10);
+        drawer.classList.remove('translate-x-full');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        setTimeout(() => backdrop.classList.add('hidden'), 300);
+      }
+    }
+
+    function showToast(msg) {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = "bg-stone-900/95 text-white text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl border border-stone-700 flex items-center gap-2 transform transition-all duration-300 opacity-0 translate-y-2 pointer-events-auto backdrop-blur-md";
+      toast.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> <span>${msg}</span>`;
+      container.appendChild(toast);
+      lucide.createIcons();
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-0', 'translate-y-2');
+      }, 50);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }
+
+    function setCategory(cat, evt) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.classList.remove('bg-spice-700', 'text-white', 'shadow-sm');
+        btn.classList.add('bg-white', 'text-stone-700');
+      });
+      if(evt) {
+        evt.currentTarget.classList.remove('bg-white', 'text-stone-700');
+        evt.currentTarget.classList.add('bg-spice-700', 'text-white', 'shadow-sm');
+      }
+      renderCatalog();
+    }
+
+    function filterProducts() {
+      renderCatalog();
+    }
+
+    function openCertModal(tab) {
+      const modal = document.getElementById('certModal');
+      const box = document.getElementById('certModalBox');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      setTimeout(() => {
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+      }, 10);
+      switchModalTab(tab);
+    }
+
+    function closeCertModal() {
+      const modal = document.getElementById('certModal');
+      const box = document.getElementById('certModalBox');
+      box.classList.remove('scale-100');
+      box.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }, 200);
+    }
+
+    function switchModalTab(tab) {
+      ['fssai', 'iso', 'coa'].forEach(t => {
+        document.getElementById(`content-${t}`).classList.add('hidden');
+        document.getElementById(`tab-${t}`).classList.remove('border-emerald-600', 'border-blue-600', 'border-amber-600', 'text-emerald-800', 'text-blue-800', 'text-amber-900');
+        document.getElementById(`tab-${t}`).classList.add('border-transparent', 'text-stone-500');
+      });
+
+      document.getElementById(`content-${tab}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-${tab}`);
+      activeBtn.classList.remove('border-transparent', 'text-stone-500');
+      if (tab === 'fssai') activeBtn.classList.add('border-emerald-600', 'text-emerald-800');
+      if (tab === 'iso') activeBtn.classList.add('border-blue-600', 'text-blue-800');
+      if (tab === 'coa') activeBtn.classList.add('border-amber-600', 'text-amber-900');
+      lucide.createIcons();
+    }
+
+    function changeLanguage(lang) {
+      ['en', 'mr', 'hi'].forEach(l => {
+        const btn = document.getElementById(`lang-${l}`);
+        if(l === lang) {
+          btn.classList.remove('text-stone-400');
+          btn.classList.add('bg-spice-700', 'text-white');
+        } else {
+          btn.classList.remove('bg-spice-700', 'text-white');
+          btn.classList.add('text-stone-400');
+        }
+      });
+
+      const dict = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+      showToast(`Language switched to ${lang === 'en' ? 'English' : lang === 'mr' ? 'मराठी' : 'हिंदी'}`);
+    }
+
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('bizName').value.trim();
+      const contactPerson = document.getElementById('bizContactPerson').value.trim();
+      const phone = document.getElementById('bizPhone').value.trim();
+      const type = document.getElementById('bizType').value;
+      const loc = document.getElementById('bizLocation').value.trim();
+      const req = document.getElementById('bizRequirements').value.trim();
+
+      if (!/^[6-9]\d{9}$/.test(phone)) {
+        showToast('⚠️ Please enter a valid 10-digit mobile number.');
+        document.getElementById('bizPhone').focus();
+        return;
+      }
+
+      const message = `*B2B BULK PROCUREMENT INQUIRY*%0A` +
+        `*Business Name:* ${name}%0A` +
+        `*Contact Person:* ${contactPerson}%0A` +
+        `*WhatsApp Phone:* +91 ${phone}%0A` +
+        `*Sector:* ${type}%0A` +
+        `*Location:* ${loc}%0A%0A` +
+        `*Configured Items:*%0A${encodeURIComponent(req)}`;
+
+      window.open(`https://wa.me/919637515153?text=${message}`, '_blank');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize AOS animation library
+      AOS.init({
+        duration: 750,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 50,
+      });
+
+      document.getElementById('total-count').textContent = catalogData.length;
+      renderCatalog();
+      renderDrawer();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
