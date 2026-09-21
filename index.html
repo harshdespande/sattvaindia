@@ -25,17 +25,17 @@
             serif: ['Playfair Display', 'serif'],
           },
           colors: {
-            spice: {
-              900: '#150806',
-              800: '#2A110D',
-              700: '#8A1C14',
-              600: '#B91C1C',
-              500: '#C2410C',
-              amber: '#EAB308',
-              gold: '#D4AF37',
-              surface: '#FAF7F2',
-            }
-          },
+  spice: {
+    900: '#0F2914',
+    800: '#1B4324',
+    700: '#2E7D32',
+    600: '#43A047',
+    500: '#66BB6A',
+    amber: '#B91C1C',
+    gold: '#8A1C14',
+    surface: '#F4FAF4',
+  }
+},
           animation: {
             'blob': 'blob 8s infinite',
             'float': 'float 4s ease-in-out infinite',
@@ -365,13 +365,13 @@
 
   <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-200/80 transition-all">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-    <a href="#" class="group flex flex-col shrink-0">
-      <div class="flex items-center gap-2">
-        <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-spice-900 group-hover:text-spice-700 transition-colors uppercase">SATTVA INDIA</span>
-        <span class="inline-block w-2 h-2 rounded-full bg-spice-amber animate-ping"></span>
-      </div>
-      <span class="text-[10px] font-extrabold tracking-[0.25em] text-stone-500 uppercase -mt-1">OVP QUALITY FOODS • PUNE</span>
-    </a>
+    <a href="#" class="group flex items-center gap-3 shrink-0">
+  <img src="sattva-logo.jpg" alt="Sattva India Logo" class="w-11 h-11 object-contain" />
+  <div class="flex flex-col">
+    <span class="text-2xl sm:text-3xl font-serif font-black tracking-tight text-spice-900 group-hover:text-spice-700 transition-colors uppercase">SATTVA INDIA</span>
+    <span class="text-[10px] font-extrabold tracking-[0.25em] text-stone-500 uppercase -mt-1">YOUR TRUSTED FOOD PARTNER</span>
+  </div>
+</a>
 
     <div class="hidden lg:flex items-center gap-4 text-sm font-semibold text-stone-700 whitespace-nowrap">
       <div class="relative group">
@@ -421,20 +421,20 @@
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight leading-[1.15]" data-i18n="heroTitle">
-            Precision Spice Formulations for Commercial Kitchens & Exporters.
-          </h1>
+  Made for the HoReCa World & Exporters.
+</h1>
 
-          <p class="text-base sm:text-lg text-stone-300 max-w-2xl leading-relaxed font-light" data-i18n="heroDesc">
-            Directly from our Nigdi milling facility. Select bulk sacks or request free chef sample kits, verify HPLC lab reports, and lock in consistent taste profiles.
-          </p>
+<p class="text-base sm:text-lg text-stone-300 max-w-2xl leading-relaxed font-light" data-i18n="heroDesc">
+  Sourced and supplied from our Pune facility. Available for bulk orders with consistent quality and taste, batch after batch.
+</p>
 
           <div class="pt-2 flex flex-wrap gap-4 items-center">
             <a href="#catalog" class="inline-flex items-center gap-2 bg-gradient-to-r from-spice-amber to-amber-500 hover:from-amber-500 hover:to-amber-600 text-spice-900 font-extrabold px-7 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all btn-enhanced btn-shine">
               <i data-lucide="layers" class="w-5 h-5"></i> <span data-i18n="heroOrderBtn">Build Custom Batch Order</span>
             </a>
-            <button onclick="openCertModal('fssai')" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold px-6 py-4 rounded-xl backdrop-blur-md transition-all hover:scale-105 active:scale-95">
-              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"></i> <span data-i18n="heroInspectCert">Inspect Compliance</span>
-            </button>
+            <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
+  <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> <span data-i18n="topCompliance">FSSAI & ISO Certified • Direct Manufacturing & Supply Partner</span>
+</span>
           </div>
         </div>
 
