@@ -804,12 +804,15 @@
           <button onclick="setCategory('staples', event)" class="cat-pill bg-white text-stone-700 hover:bg-stone-100 border border-stone-300 text-xs font-bold px-4 py-2 rounded-xl transition-all whitespace-nowrap" data-i18n="catStaples">Pantry & Other Items (8)</button>
         </div>
 
-        <div class="w-full md:w-72 shrink-0">
-          <div class="relative">
-            <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5"></i>
-            <input type="text" id="productSearch" placeholder="Search masale, whole spices, sauces..." class="w-full pl-10 pr-4 py-2.5 text-xs bg-white border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 shadow-sm transition-all" onkeyup="filterProducts()" />
-          </div>
-        </div>
+        <div class="w-full md:w-64 shrink-0">
+  <div class="relative">
+    <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5 pointer-events-none"></i>
+    <select id="productSearch" class="w-full pl-10 pr-4 py-2.5 text-xs bg-white border border-stone-300 rounded-xl focus:outline-none focus:border-spice-700 shadow-sm transition-all appearance-none" onchange="filterProducts()">
+      <option value="">All Products</option>
+    </select>
+    <i data-lucide="chevron-down" class="w-4 h-4 text-stone-400 absolute right-3.5 top-3.5 pointer-events-none"></i>
+  </div>
+</div>
       </div>
 
       <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 pt-8">
@@ -1778,26 +1781,26 @@
     // Full 65 Products parsed from your listing
     const catalogData = [
       // 1. LISTING OF MASALE (20 Items)
-      { id: 1, name: "Laal Mirchi Powder", cat: "masale", color: "#991B1B", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "High Pungency" },
-      { id: 2, name: "Kashmiri Mirchi Powder", cat: "masale", color: "#B91C1C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Vibrant Red" },
-      { id: 3, name: "Halad", cat: "masale", color: "#D97706", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "High Curcumin" },
-      { id: 4, name: "Dhana", cat: "masale", color: "#854D0E", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Aromatic Pure" },
-      { id: 5, name: "Kanda Lasun Masala", cat: "masale", color: "#7F1D1D", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "MH Signature" },
-      { id: 6, name: "Garam Masala", cat: "masale", color: "#451A03", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Royal Blend" },
-      { id: 7, name: "Goda Masala", cat: "masale", color: "#292524", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Authentic Sweet Spice" },
-      { id: 8, name: "Mutton Masala", cat: "masale", color: "#78350F", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Bold & Spicy" },
-      { id: 9, name: "Chicken Masala", cat: "masale", color: "#9A3412", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Rich Gravy" },
-      { id: 10, name: "Pav Bhaji Masala", cat: "masale", color: "#C2410C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "HoReCa Grade" },
-      { id: 11, name: "Sambar Masala", cat: "masale", color: "#B45309", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "South Classic" },
-      { id: 12, name: "Kitchen King Masala", cat: "masale", color: "#A16207", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "All-Round Curry" },
-      { id: 13, name: "Chole Masala", cat: "masale", color: "#92400E", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Tangy & Robust" },
-      { id: 14, name: "Chat Masala", cat: "masale", color: "#CA8A04", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Zesty Zing" },
-      { id: 15, name: "Biryani Masala", cat: "masale", color: "#B45309", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Dum Aroma" },
-      { id: 16, name: "Sunday Garam Masala", cat: "masale", color: "#581C87", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Chef's Special" },
-      { id: 17, name: "Tandoori Masala", cat: "masale", color: "#DC2626", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Smoky Red" },
-      { id: 18, name: "Fish Curry Masala", cat: "masale", color: "#EA580C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Coastal Profile" },
-      { id: 19, name: "Amchur Powder", cat: "masale", color: "#D97706", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Natural Sour" },
-      { id: 20, name: "Egg Curry Masala", cat: "masale", color: "#C2410C", packUnits: ["500g Pouch", "1kg Bag", "5kg Jar", "25kg Sack"], tag: "Savory Blend" },
+      { id: 1, name: "Laal Mirchi Powder", cat: "masale", color: "#991B1B", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "High Pungency" },
+      { id: 2, name: "Kashmiri Mirchi Powder", cat: "masale", color: "#B91C1C", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Vibrant Red" },
+      { id: 3, name: "Halad", cat: "masale", color: "#D97706", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "High Curcumin" },
+      { id: 4, name: "Dhana", cat: "masale", color: "#854D0E", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Aromatic Pure" },
+      { id: 5, name: "Kanda Lasun Masala", cat: "masale", color: "#7F1D1D", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "MH Signature" },
+      { id: 6, name: "Garam Masala", cat: "masale", color: "#451A03", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Royal Blend" },
+      { id: 7, name: "Goda Masala", cat: "masale", color: "#292524", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Authentic Sweet Spice" },
+      { id: 8, name: "Mutton Masala", cat: "masale", color: "#78350F", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Bold & Spicy" },
+      { id: 9, name: "Chicken Masala", cat: "masale", color: "#9A3412", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Rich Gravy" },
+      { id: 10, name: "Pav Bhaji Masala", cat: "masale", color: "#C2410C", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "HoReCa Grade" },
+      { id: 11, name: "Sambar Masala", cat: "masale", color: "#B45309", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "South Classic" },
+      { id: 12, name: "Kitchen King Masala", cat: "masale", color: "#A16207", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "All-Round Curry" },
+      { id: 13, name: "Chole Masala", cat: "masale", color: "#92400E", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Tangy & Robust" },
+      { id: 14, name: "Chat Masala", cat: "masale", color: "#CA8A04", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Zesty Zing" },
+      { id: 15, name: "Biryani Masala", cat: "masale", color: "#B45309", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Dum Aroma" },
+      { id: 16, name: "Sunday Garam Masala", cat: "masale", color: "#581C87", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Chef's Special" },
+      { id: 17, name: "Tandoori Masala", cat: "masale", color: "#DC2626", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Smoky Red" },
+      { id: 18, name: "Fish Curry Masala", cat: "masale", color: "#EA580C", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Coastal Profile" },
+      { id: 19, name: "Amchur Powder", cat: "masale", color: "#D97706", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Natural Sour" },
+      { id: 20, name: "Egg Curry Masala", cat: "masale", color: "#C2410C", packUnits: ["500g Pouch", "1kg Bag", "25kg Sack"], tag: "Savory Blend" },
 
       // 2. LISTING OF SAUCES (5 Items)
       { id: 21, name: "Red Chillie Sauce", cat: "sauces", color: "#EF4444", packUnits: ["650g Bottle", "5kg Commercial Jar"], tag: "Culinary" },
@@ -2181,6 +2184,13 @@ showToast(`Switched to ${mode === 'bulk' ? 'Commercial Bulk Packaging Mode' : 'C
       });
 
       document.getElementById('total-count').textContent = catalogData.length;
+      const searchSelect = document.getElementById('productSearch');
+catalogData.forEach(p => {
+  const opt = document.createElement('option');
+  opt.value = p.name.toLowerCase();
+  opt.textContent = p.name;
+  searchSelect.appendChild(opt);
+});
       renderCatalog();
       renderDrawer();
       lucide.createIcons();
