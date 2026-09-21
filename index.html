@@ -789,8 +789,8 @@
             <i data-lucide="package" class="w-3.5 h-3.5"></i> Commercial Bulk
           </button>
           <button onclick="setMode('sample')" id="mode-sample" class="px-3.5 py-1.5 rounded-xl text-xs font-bold text-stone-600 hover:text-stone-900 transition-all flex items-center gap-1.5">
-            <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i> Free Chef's Sample Kit (50-100g)
-          </button>
+  <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i> Chef's Sample Kit (50-100g)
+</button>
         </div>
       </div>
 
@@ -1866,8 +1866,7 @@
         document.getElementById('mode-sample').className = "px-3.5 py-1.5 rounded-xl text-xs font-bold bg-spice-700 text-white transition-all flex items-center gap-1.5 shadow-sm";
         document.getElementById('mode-bulk').className = "px-3.5 py-1.5 rounded-xl text-xs font-bold text-stone-600 hover:text-stone-900 transition-all flex items-center gap-1.5";
       }
-      showToast(`Switched to ${mode === 'bulk' ? 'Commercial Bulk Packaging Mode' : 'Free Chef Sample Kit Mode (50-100g)'}`);
-      renderCatalog();
+showToast(`Switched to ${mode === 'bulk' ? 'Commercial Bulk Packaging Mode' : 'Chef Sample Kit Mode (50-100g)'}`);      renderCatalog();
     }
 
     function renderCatalog() {
