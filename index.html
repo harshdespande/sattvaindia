@@ -392,8 +392,7 @@
       <a href="#sectors" class="hover:text-spice-700 transition-colors" data-i18n="navSectors">Supply Sectors</a>
       <a href="#routes" class="hover:text-spice-700 transition-colors" data-i18n="navRoutes">Logistics Hub</a>
       <a href="#catalog" class="hover:text-spice-700 transition-colors" data-i18n="navCatalog">Catalog & Matrix</a>
-      <a href="#compliance" class="hover:text-spice-700 transition-colors" data-i18n="navCert">COA & Quality</a>
-    </div>
+  </div>
 
     <div class="flex items-center space-x-3 shrink-0">
       <button onclick="toggleDrawer(true)" class="relative inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-sm transition-all hover:shadow-lg active:scale-95 whitespace-nowrap">
@@ -835,59 +834,7 @@
     </div>
   </section>
 
-  <section id="compliance" class="py-16 bg-white border-b border-stone-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md" data-i18n="certTag">Transparency & Quality Control</span>
-        <h2 class="text-3xl font-serif font-black text-stone-900 mt-2" data-i18n="certTitle">Live Certifications & Batch COA Reports</h2>
-        <p class="text-stone-600 text-sm mt-2" data-i18n="certDesc">Audit our compliance benchmarks before purchasing. We provide batch-specific testing for high-volume commercial kitchens and exporters.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div onclick="openCertModal('fssai')" class="cursor-pointer p-6 rounded-2xl bg-stone-50 hover:bg-white border border-stone-200 hover:border-emerald-500 hover-lift group" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <i data-lucide="shield-check" class="w-6 h-6"></i>
-            </div>
-            <span class="text-[10px] font-bold uppercase bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-md">Govt Licensed</span>
-          </div>
-          <h3 class="font-bold text-stone-900 text-lg group-hover:text-emerald-800 transition-colors">FSSAI Manufacturing License</h3>
-          <p class="text-xs text-stone-600 mt-2">Certified central/state compliance ensuring 100% hygienic handling, zero synthetic contaminants, and safe food grade storage.</p>
-          <div class="mt-4 flex items-center gap-1 text-xs font-bold text-emerald-700">
-            <span>Inspect License Parameters</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-
-        <div onclick="openCertModal('iso')" class="cursor-pointer p-6 rounded-2xl bg-stone-50 hover:bg-white border border-stone-200 hover:border-blue-500 hover-lift group" data-aos="fade-up" data-aos-delay="200">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <i data-lucide="award" class="w-6 h-6"></i>
-            </div>
-            <span class="text-[10px] font-bold uppercase bg-blue-100 text-blue-800 px-2.5 py-1 rounded-md">ISO Certified</span>
-          </div>
-          <h3 class="font-bold text-stone-900 text-lg group-hover:text-blue-800 transition-colors">ISO 9001:2015 Quality System</h3>
-          <p class="text-xs text-stone-600 mt-2">Standardized quality management across procurement, cold-milling, recipe replication, and institutional packaging.</p>
-          <div class="mt-4 flex items-center gap-1 text-xs font-bold text-blue-700">
-            <span>View ISO Audit Scope</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-
-        <div onclick="openCertModal('coa')" class="cursor-pointer p-6 rounded-2xl bg-stone-50 hover:bg-white border border-stone-200 hover:border-spice-amber hover-lift group" data-aos="fade-up" data-aos-delay="300">
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
-            </div>
-            <span class="text-[10px] font-bold uppercase bg-amber-100 text-amber-900 px-2.5 py-1 rounded-md">Lab Certificate</span>
-          </div>
-          <h3 class="font-bold text-stone-900 text-lg group-hover:text-spice-700 transition-colors">Certificate of Analysis (COA)</h3>
-          <p class="text-xs text-stone-600 mt-2">HPLC lab verification for zero Sudan dye adulteration, low moisture (&lt;9.5%), and export aflatoxin benchmarks.</p>
-          <div class="mt-4 flex items-center gap-1 text-xs font-bold text-spice-700">
-            <span>Inspect Chemical & Microbe Report</span> <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section id="quote-section" class="py-20 bg-stone-50 border-b border-stone-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1260,10 +1207,7 @@
       </div>
       <span class="text-[10px] font-bold mt-0.5">Quote</span>
     </button>
-    <a href="#compliance" class="flex flex-col items-center text-stone-600 hover:text-spice-700 transition-colors">
-      <i data-lucide="shield-check" class="w-5 h-5"></i>
-      <span class="text-[10px] font-bold mt-0.5">COA Labs</span>
-    </a>
+      
   </div>
 
   <div id="certModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity duration-300">
